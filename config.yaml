@@ -1,0 +1,18 @@
+loop:
+    data_step: 2000
+    n: 20
+    start_data: 8000
+    verbose: 1
+model_params:
+    model_name: ResNet50
+    input_shape: (32, 32, 3)
+    optimizer: tf.keras.optimizers.Adam
+    loss: tf.keras.losses.CategoricalCrossentropy()
+    metrics: accuracy
+data_loading_params:
+    name: cifar10
+    batch_size: 128
+    norm_func: mask_to_categorical
+    resize: 0
+    custom_dir: 0
+    validation_or_test: test
