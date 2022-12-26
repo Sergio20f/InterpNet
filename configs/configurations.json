@@ -1,0 +1,14 @@
+{
+    "Neural_Network_Generator":{
+        "neural_networks" : 100,
+        "n_hidden_layers" : 0,
+        "n_categories" : 2,
+        "neuron_number_list" : [512, 100, 100],
+        "activation_function_list": ["relu", "softmax", "tanh"], 
+        "loss_list" : ["binary_crossentropy"],
+        "optimizer_list" : ["adam"],
+        "epochs_list" : [1, 3],
+        "batch_size_list": [32, 64, 128]
+
+    }
+}

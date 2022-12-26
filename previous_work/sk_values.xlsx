@@ -1,0 +1,7 @@
+,XGBClassifier,LogisticRegression,GaussianNB,RandomForestClassifier
+dataset,91.5,35.83,30.5,50.67
+batch_size,49.5,24.17,31.6667,35.67
+augmentation,66.83,46.83,47.0,59.17
+optimizer,99.17,45.33,51.6667,96.8333
+activation,98.67,73.67,71.3333,94.67
+initialization,70.0,56.17,55.3333,64.6667

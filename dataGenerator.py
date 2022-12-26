@@ -134,6 +134,11 @@ class toyData():
         plt.xticks(())
         plt.yticks(())
         plt.show()
+        
+    def one_hot_encoding(self, array_y):
+        y_one_hot_encoded = np.zeros((array_y.size, array_y.max() + 1))
+        y_one_hot_encoded[np.arange(array_y.size), array_y] = 1
+        return y_one_hot_encoded
     
     def main(self):
         # Returns all datasets
@@ -141,6 +146,7 @@ class toyData():
         if self.dataset_n == None:
             X = [x[0] for x in datasets]
             y = [y[1] for y in datasets]
+            y = self.one_hot_encoding(y)
             return (X, y)
 
         dataset = datasets[self.dataset_n]
@@ -149,4 +155,5 @@ class toyData():
         if self.plot == True:
             self.plot_data(X, y)
         
+        y = self.one_hot_encoding(y)
         return (X, y)
