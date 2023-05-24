@@ -1,0 +1,14 @@
+{
+    "model::N_attention_blocks": 6,
+    "model::i_dim": 512,
+    "model::dim_attention_embedding": 512,
+    "model::normalize": true,
+    "model::N_attention_heads": 8,
+    "model::dropout": 0.1,
+    "model::attention_hidden_dim": 2048,
+    "model::latent_dim": 256,
+    "model::encoding": "weight",
+    "model::compression_token": false,
+    "model::bottleneck": "linear",
+    "model::bottleneck::h_lays": 3
+}

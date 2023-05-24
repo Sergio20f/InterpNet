@@ -1,3 +1,0 @@
-# InterpNet
-
-Work in progress.
